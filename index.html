@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CS Student & Full-Stack Automator specializing in Python, n8n, and creative content. Automating the future, documenting the journey.">
+    <meta name="theme-color" content="#0A192F">
+    
+    <title>Full-Stack Automator | Python & n8n Specialist</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="loader-text">Initializing...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">VA</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-tag">// available for freelance</p>
+                    <h1 class="hero-headline">
+                        <span class="line">Automating the Future,</span>
+                        <span class="line accent">Documenting the Journey.</span>
+                    </h1>
+                    <p class="hero-subheadline">
+                        <span class="badge">CS Student @ UoPeople</span>
+                        <span class="separator">|</span>
+                        <span class="badge">Python & n8n Specialist</span>
+                        <span class="separator">|</span>
+                        <span class="badge">Content Creator</span>
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Start a Project</a>
+                        <a href="#work" class="btn btn-secondary">View My Work</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <!-- Terminal Side -->
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">automation.py</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre class="code"><code><span class="comment"># Full-Stack Automation Script</span>
+<span class="keyword">import</span> asyncio
+<span class="keyword">from</span> n8n <span class="keyword">import</span> Workflow
+
+<span class="keyword">class</span> <span class="class-name">Automator</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.skills = [
+            <span class="string">"Python"</span>,
+            <span class="string">"Bash"</span>,
+            <span class="string">"n8n Agents"</span>
+        ]
+    
+    <span class="keyword">async def</span> <span class="function">execute</span>(<span class="param">self</span>):
+        <span class="keyword">for</span> task <span class="keyword">in</span> <span class="param">self</span>.tasks:
+            <span class="keyword">await</span> <span class="param">self</span>.automate(task)
+        <span class="keyword">return</span> <span class="string">"✓ Complete"</span>
+
+<span class="comment"># Initialize</span>
+bot = <span class="class-name">Automator</span>()
+<span class="builtin">print</span>(bot.execute())<span class="cursor">|</span></code></pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Nature Aesthetic Side -->
+                    <div class="nature-montage">
+                        <div class="montage-grid">
+                            <div class="montage-item item-1">
+                                <div class="nature-card">
+                                    <svg class="nature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                    <span>30K+</span>
+                                    <small>Community</small>
+                                </div>
+                            </div>
+                            <div class="montage-item item-2">
+                                <div class="nature-card">
+                                    <svg class="nature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                                        <polyline points="14,2 14,8 20,8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                    </svg>
+                                    <span>35+</span>
+                                    <small>Publications</small>
+                                </div>
+                            </div>
+                            <div class="montage-item item-3">
+                                <div class="nature-card brand-card">
+                                    <div class="brand-name">Africa Nature Walk</div>
+                                    <div class="brand-tagline">Nature • Aesthetic • Content</div>
+                                </div>
+                            </div>
+                            <div class="montage-item item-4">
+                                <div class="nature-card">
+                                    <svg class="nature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                    <span>Creator</span>
+                                    <small>TikTok</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-tag">// what I work with</p>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Automation -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Automation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash Scripting</span>
+                        <span class="skill-tag">n8n Agents</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">Telegram Bots</span>
+                    </div>
+                </div>
+                
+                <!-- Web & Game Dev -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16,18 22,12 16,6"/>
+                                <polyline points="8,6 2,12 8,18"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Web & Game Dev</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <a href="https://solitairecc.com" target="_blank" class="skill-tag highlight">SolitaireCC.com</a>
+                        <a href="https://sasagadgets.vercel.app" target="_blank" class="skill-tag highlight">SasaGadgets</a>
+                        <a href="https://bomabasket.vercel.app" target="_blank" class="skill-tag highlight">BomaBaskets</a>
+                    </div>
+                </div>
+                
+                <!-- Creative Tech -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Creative Tech</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">Video Editing</span>
+                        <span class="skill-tag">CapCut</span>
+                        <span class="skill-tag">DaVinci Resolve</span>
+                        <span class="skill-tag">AI Integration</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Content Strategy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-tag">// live projects</p>
+                <h2 class="section-title">Websites I Built</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- SolitaireCC -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <div class="browser-frame">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="browser-url">solitairecc.com</span>
+                        </div>
+                        <div class="iframe-container">
+                            <iframe src="https://solitairecc.com" loading="lazy" title="SolitaireCC Preview"></iframe>
+                            <div class="iframe-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">SolitaireCC</h3>
+                        <p class="project-desc">Classic card game built with vanilla JavaScript. Clean UI, smooth animations.</p>
+                        <a href="https://solitairecc.com" target="_blank" class="project-link">Visit Site →</a>
+                    </div>
+                </div>
+                
+                <!-- SasaGadgets -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <div class="browser-frame">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="browser-url">sasagadgets.vercel.app</span>
+                        </div>
+                        <div class="iframe-container">
+                            <iframe src="https://sasagadgets.vercel.app" loading="lazy" title="SasaGadgets Preview"></iframe>
+                            <div class="iframe-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">SasaGadgets</h3>
+                        <p class="project-desc">E-commerce platform for tech gadgets. Modern design, responsive layout.</p>
+                        <a href="https://sasagadgets.vercel.app" target="_blank" class="project-link">Visit Site →</a>
+                    </div>
+                </div>
+                
+                <!-- BomaBaskets -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <div class="browser-frame">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="browser-url">bomabasket.vercel.app</span>
+                        </div>
+                        <div class="iframe-container">
+                            <iframe src="https://bomabasket.vercel.app" loading="lazy" title="BomaBaskets Preview"></iframe>
+                            <div class="iframe-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BomaBaskets</h3>
+                        <p class="project-desc">Shopping basket solutions. Clean checkout experience.</p>
+                        <a href="https://bomabasket.vercel.app" target="_blank" class="project-link">Visit Site →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section class="books" id="books">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-tag">// published work</p>
+                <h2 class="section-title">Amazon KDP Books</h2>
+            </div>
+            
+            <div class="books-showcase">
+                <div class="books-info">
+                    <div class="books-count">35+</div>
+                    <h3>Published Titles</h3>
+                    <p>A collection of books spanning various niches, demonstrating consistency, project completion, and entrepreneurial drive.</p>
+                    <a href="https://www.amazon.com" target="_blank" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                        View on Amazon
+                    </a>
+                </div>
+                
+                <div class="books-display">
+                    <div class="book-stack">
+                        <div class="book book-1">
+                            <div class="book-spine"></div>
+                            <div class="book-cover">
+                                <div class="book-title">Nature Journal</div>
+                            </div>
+                        </div>
+                        <div class="book book-2">
+                            <div class="book-spine"></div>
+                            <div class="book-cover">
+                                <div class="book-title">Daily Planner</div>
+                            </div>
+                        </div>
+                        <div class="book book-3">
+                            <div class="book-spine"></div>
+                            <div class="book-cover">
+                                <div class="book-title">Coloring Book</div>
+                            </div>
+                        </div>
+                        <div class="book book-4">
+                            <div class="book-spine"></div>
+                            <div class="book-cover">
+                                <div class="book-title">Activity Book</div>
+                            </div>
+                        </div>
+                        <div class="book book-5">
+                            <div class="book-spine"></div>
+                            <div class="book-cover">
+                                <div class="book-title">Notebook</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-tag">// proof of work</p>
+                <h2 class="section-title">Output & Execution</h2>
+            </div>
+            
+            <div class="work-grid">
+                <!-- Card 1: The Audience -->
+                <article class="work-card">
+                    <div class="card-number">01</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="card-metric">30,000+</div>
+                    <h3 class="card-title">Community Builder</h3>
+                    <p class="card-description">
+                        Founder of <strong>'Africa Nature Walk.'</strong> Grew a nature-niche audience to 30K followers through consistent video strategy and authentic engagement.
+                    </p>
+                    <div class="card-tags">
+                        <span>TikTok</span>
+                        <span>Content Strategy</span>
+                        <span>Growth</span>
+                    </div>
+                </article>
+                
+                <!-- Card 2: The Volume -->
+                <article class="work-card">
+                    <div class="card-number">02</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            <line x1="8" y1="6" x2="16" y2="6"/>
+                            <line x1="8" y1="10" x2="14" y2="10"/>
+                        </svg>
+                    </div>
+                    <div class="card-metric">35+</div>
+                    <h3 class="card-title">Published Titles</h3>
+                    <p class="card-description">
+                        <strong>Amazon KDP Author.</strong> Demonstrated persistence and project completion capabilities across 35 distinct projects from ideation to publication.
+                    </p>
+                    <div class="card-tags">
+                        <span>KDP</span>
+                        <span>Publishing</span>
+                        <span>Completion</span>
+                    </div>
+                </article>
+                
+                <!-- Card 3: The Code -->
+                <article class="work-card">
+                    <div class="card-number">03</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="7.5,4.21 12,6.81 16.5,4.21"/>
+                            <polyline points="7.5,19.79 7.5,14.6 3,12"/>
+                            <polyline points="21,12 16.5,14.6 16.5,19.79"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <div class="card-metric">Custom</div>
+                    <h3 class="card-title">Telegram Bots & Scripting</h3>
+                    <p class="card-description">
+                        Custom automation tools built to solve <strong>real-world efficiency problems.</strong> From data scraping to workflow automation and bot development.
+                    </p>
+                    <div class="card-tags">
+                        <span>Python</span>
+                        <span>Bots</span>
+                        <span>Automation</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <p class="section-tag">// let's connect</p>
+                    <h2 class="contact-headline">Ready to automate your workflow?</h2>
+                    <p class="contact-microcopy">
+                        Currently open for freelance automation scripts, bot development, and technical writing.
+                    </p>
+                </div>
+                
+                <div class="contact-actions">
+                    <a href="mailto:ceonjiyo@gmail.com" class="btn btn-primary btn-large">
+                        <span>Start a Project</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    
+                    <div class="contact-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@africanaturewalk" target="_blank" class="social-link" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">
+                <span class="code-accent">&lt;</span> Built with precision <span class="code-accent">/&gt;</span>
+            </p>
+            <p class="footer-copyright">© 2026 — All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
