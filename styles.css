@@ -1277,6 +1277,220 @@ a.skill-tag {
 }
 
 /* ===================================
+   Experience Section
+   =================================== */
+.experience {
+    padding: var(--section-padding) 0;
+    background: var(--primary);
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.exp-card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 40px;
+    background: var(--primary-light);
+    border: 1px solid var(--primary-lighter);
+    border-radius: 16px;
+    padding: 32px;
+    transition: var(--transition-base);
+    position: relative;
+}
+
+.exp-card:hover {
+    border-color: var(--accent);
+    transform: translateX(8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.exp-period {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    padding-top: 4px;
+    white-space: nowrap;
+}
+
+.exp-content {
+    min-width: 0;
+}
+
+.exp-title {
+    font-family: var(--font-mono);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.exp-org {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.exp-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.exp-details li {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.exp-details li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.exp-tags span {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    background: rgba(255, 179, 0, 0.1);
+    border: 1px solid rgba(255, 179, 0, 0.2);
+    border-radius: 4px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===================================
+   Education Section
+   =================================== */
+.education {
+    padding: var(--section-padding) 0;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--primary-light) 100%);
+}
+
+.edu-card {
+    display: flex;
+    gap: 32px;
+    background: var(--primary);
+    border: 1px solid var(--primary-lighter);
+    border-radius: 16px;
+    padding: 40px;
+    transition: var(--transition-base);
+}
+
+.edu-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-hover);
+}
+
+.edu-icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 179, 0, 0.1);
+    border-radius: 16px;
+}
+
+.edu-icon svg {
+    width: 32px;
+    height: 32px;
+    color: var(--accent);
+}
+
+.edu-degree {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.edu-school {
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
+.edu-status {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* ===================================
+   Contact Details
+   =================================== */
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    padding: 12px 20px;
+    background: var(--primary-light);
+    border: 1px solid var(--primary-lighter);
+    border-radius: 8px;
+    transition: var(--transition-base);
+}
+
+.contact-item:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.contact-item svg {
+    color: var(--accent);
+    min-width: 18px;
+}
+
+/* ===================================
+   Project Placeholder
+   =================================== */
+.project-placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+.project-placeholder svg {
+    opacity: 0.5;
+}
+
+/* ===================================
    Responsive Design
    =================================== */
 @media (max-width: 1024px) {
@@ -1292,9 +1506,13 @@ a.skill-tag {
     }
     
     .skills-grid,
-    .work-grid,
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .exp-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
     
     .books-showcase {
@@ -1364,9 +1582,25 @@ a.skill-tag {
     }
     
     .skills-grid,
-    .work-grid,
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .exp-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 24px;
+    }
+    
+    .edu-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+    }
+    
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
     }
     
     .books-showcase {

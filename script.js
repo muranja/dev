@@ -88,7 +88,7 @@ function initNavigation() {
 // Scroll Reveal Animation
 // ===================================
 function initScrollReveal() {
-    const revealElements = document.querySelectorAll('.skill-category, .work-card, .project-card, .books-showcase, .section-header, .contact-content');
+    const revealElements = document.querySelectorAll('.skill-category, .exp-card, .project-card, .books-showcase, .edu-card, .section-header, .contact-content');
     
     const revealOnScroll = () => {
         const windowHeight = window.innerHeight;
