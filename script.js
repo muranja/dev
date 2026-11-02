@@ -131,7 +131,7 @@ function initNavigation() {
  */
 function initScrollReveal() {
     const revealElements = document.querySelectorAll(
-        '.skill-category, .skills-auxiliary, .exp-card, .project-card, .books-showcase, .edu-card, .section-header, .contact-content'
+        '.skill-category, .skills-auxiliary, .exp-card, .project-card, .books-showcase, .book-card, .edu-card, .section-header, .contact-content'
     );
     if (!revealElements.length) return;
 

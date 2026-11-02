@@ -158,7 +158,7 @@ img {
 .nav-container {
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 clamp(16px, 3vw, 40px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -184,14 +184,15 @@ img {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: clamp(12px, 1.8vw, 24px);
 }
 
 .nav-links a {
     font-family: var(--font-mono);
-    font-size: 0.875rem;
+    font-size: 0.825rem;
     color: var(--text-secondary);
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -1154,6 +1155,87 @@ a.skill-tag {
 .book-5 .book-spine { background: #4A148C; }
 .book-5 .book-title { color: white; }
 
+/* Book Stack Anchor */
+a.book {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Books Catalog Grid */
+.books-catalog-grid {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    background: var(--primary);
+    border: 1px solid var(--primary-lighter);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition-base);
+    text-decoration: none;
+    color: inherit;
+}
+
+.book-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.book-card-category {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.book-card-title {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.book-card-desc {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.book-card-link {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    transition: var(--transition-fast);
+}
+
+.book-card:hover .book-card-link {
+    letter-spacing: 0.5px;
+}
+
+.books-all-cta {
+    margin-top: 36px;
+    text-align: center;
+}
+
 /* ===================================
    Work Section
    =================================== */
@@ -1689,15 +1771,6 @@ a.skill-tag {
 .footer-resume-link:hover {
     color: var(--accent-hover);
 }
-    border-radius: 8px;
-    transition: var(--transition-base);
-}
-
-.contact-item:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-2px);
-}
 
 .contact-item svg {
     color: var(--accent);
@@ -1739,7 +1812,8 @@ a.skill-tag {
     }
     
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .books-catalog-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -1755,7 +1829,7 @@ a.skill-tag {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     :root {
         --section-padding: 80px;
     }
@@ -1815,7 +1889,8 @@ a.skill-tag {
     }
     
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .books-catalog-grid {
         grid-template-columns: 1fr;
     }
     
