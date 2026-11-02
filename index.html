@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Simon Njiyo Muranja — Systems architect and marketing professional managing high-growth digital platforms and automated content channels.">
+        content="Simon Njiyo Muranja — Computer Science student with hands-on experience in software development, Linux systems administration, and network infrastructure.">
+    <meta name="author" content="Simon Njiyo Muranja">
     <meta name="theme-color" content="#0A192F">
 
-    <title>Simon Njiyo Muranja | Systems Architect & Marketing Professional</title>
+    <title>Simon Njiyo Muranja | Software Engineering &amp; Systems</title>
+
+    <!-- OpenGraph / Social Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muranja.github.io/dev/">
+    <meta property="og:title" content="Simon Njiyo Muranja | Software Engineering &amp; Systems">
+    <meta property="og:description"
+        content="Computer Science student with hands-on experience in software development, Linux systems administration, and network infrastructure.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +45,7 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
+            <a href="#" class="nav-logo" aria-label="Simon Muranja Home">
                 <span class="logo-bracket">&lt;</span>
                 <span class="logo-text">SM</span>
                 <span class="logo-bracket">/&gt;</span>
@@ -47,9 +55,19 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
+                <li>
+                    <a href="Simon-Njiyo-Muranja-Resume.pdf" download="Simon-Njiyo-Muranja-Resume.pdf" class="nav-resume-btn" title="Download CV (PDF)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        <span>Resume</span>
+                    </a>
+                </li>
                 <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
             </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -58,12 +76,13 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <ul class="mobile-links">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="Simon-Njiyo-Muranja-Resume.pdf" download="Simon-Njiyo-Muranja-Resume.pdf" class="nav-resume-btn">Download Resume (PDF)</a></li>
             <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
         </ul>
     </div>
@@ -73,21 +92,32 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="hero-tag">// systems architect & marketing professional</p>
+                    <p class="hero-tag">// software engineering &amp; systems administration</p>
                     <h1 class="hero-headline">
                         <span class="line">Simon Njiyo</span>
                         <span class="line accent">Muranja</span>
                     </h1>
                     <p class="hero-subheadline">
-                        <span class="badge">System Architect</span>
+                        <span class="badge">Software Engineering</span>
                         <span class="separator">|</span>
-                        <span class="badge">Social Media Strategist</span>
+                        <span class="badge">Linux Systems Admin</span>
                         <span class="separator">|</span>
-                        <span class="badge">Published Author</span>
+                        <span class="badge">Network Infrastructure</span>
+                    </p>
+                    <p class="hero-summary">
+                        Computer Science student with hands-on experience in software development, Linux systems administration, and network infrastructure. Proven ability to build and deploy practical solutions—from Python CLI automation tools and Next.js web applications to localized network systems. Seeking a Software Engineering, Systems, or IT internship/junior role.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">Start a Project</a>
-                        <a href="#experience" class="btn btn-secondary">View My Work</a>
+                        <a href="Simon-Njiyo-Muranja-Resume.pdf" download="Simon-Njiyo-Muranja-Resume.pdf" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            <span>Download CV (PDF)</span>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
                 </div>
 
@@ -100,43 +130,44 @@
                                 <span class="dot yellow"></span>
                                 <span class="dot green"></span>
                             </div>
-                            <span class="terminal-title">system_architect.py</span>
+                            <span class="terminal-title">systems_engineer.py</span>
                         </div>
                         <div class="terminal-body">
-                            <pre class="code"><code><span class="comment"># Multi-Platform Pipeline</span>
-<span class="keyword">import</span> marketing
-<span class="keyword">from</span> automation <span class="keyword">import</span> Pipeline
+                            <pre class="code"><code><span class="comment"># Systems &amp; Software Engineering</span>
+<span class="keyword">from</span> dataclasses <span class="keyword">import</span> dataclass
+<span class="keyword">from</span> typing <span class="keyword">import</span> Tuple
 
-<span class="keyword">class</span> <span class="class-name">SystemArchitect</span>:
-    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
-        <span class="param">self</span>.stack = [
-            <span class="string">"Python"</span>,
-            <span class="string">"Next.js"</span>,
-            <span class="string">"Automation"</span>
-        ]
-    
-    <span class="keyword">def</span> <span class="function">execute</span>(<span class="param">self</span>):
-        <span class="keyword">for</span> platform <span class="keyword">in</span> <span class="param">self</span>.platforms:
-            <span class="param">self</span>.scale(platform)
-        <span class="keyword">return</span> <span class="string">"Growth ✓"</span>
+<span class="keyword">@dataclass</span>(frozen=<span class="keyword">True</span>)
+<span class="keyword">class</span> <span class="class-name">SystemsEngineer</span>:
+    <span class="param">name</span>: <span class="builtin">str</span> = <span class="string">"Simon Njiyo Muranja"</span>
+    <span class="param">status</span>: <span class="builtin">str</span> = <span class="string">"BSc Computer Science (In Progress)"</span>
+    <span class="param">stack</span>: <span class="builtin">Tuple</span>[<span class="builtin">str</span>, ...] = (
+        <span class="string">"Python"</span>, <span class="string">"Java"</span>, <span class="string">"C"</span>, <span class="string">"Bash"</span>,
+        <span class="string">"Linux"</span>, <span class="string">"MikroTik"</span>, <span class="string">"GCP"</span>, <span class="string">"Next.js"</span>
+    )
 
-<span class="comment"># Deploy</span>
-bot = <span class="class-name">SystemArchitect</span>()
-<span class="builtin">print</span>(bot.execute())<span class="cursor">|</span></code></pre>
+    <span class="keyword">def</span> <span class="function">deploy_solution</span>(<span class="param">self</span>, <span class="param">env</span>: <span class="builtin">str</span>) -&gt; <span class="builtin">str</span>:
+        <span class="keyword">return</span> <span class="string">f"[{env.upper()}] Production Ready ✓"</span>
+
+dev = <span class="class-name">SystemsEngineer</span>()
+<span class="builtin">print</span>(dev.deploy_solution(<span class="string">"Production"</span>))<span class="cursor">|</span></code></pre>
                         </div>
                     </div>
 
-                    <!-- Nature Aesthetic Side -->
+                    <!-- Metrics / Highlights Side -->
                     <div class="nature-montage">
                         <div class="montage-grid">
                             <div class="montage-item item-1">
                                 <div class="nature-card">
                                     <svg class="nature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.5">
-                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                        <line x1="6" y1="6" x2="6.01" y2="6" />
+                                        <line x1="6" y1="18" x2="6.01" y2="18" />
                                     </svg>
-                                    <span>30K+</span>
-                                    <small>Community</small>
+                                    <span>Linux &amp; GCP</span>
+                                    <small>Systems &amp; Cloud</small>
                                 </div>
                             </div>
                             <div class="montage-item item-2">
@@ -149,26 +180,24 @@ bot = <span class="class-name">SystemArchitect</span>()
                                         <line x1="16" y1="13" x2="8" y2="13" />
                                         <line x1="16" y1="17" x2="8" y2="17" />
                                     </svg>
-                                    <span>35+</span>
-                                    <small>Publications</small>
+                                    <span class="counter-val" data-target="35" data-suffix="+">35+</span>
+                                    <small>KDP Titles</small>
                                 </div>
                             </div>
                             <div class="montage-item item-3">
                                 <div class="nature-card brand-card">
-                                    <div class="brand-name">Africa Nature Walk</div>
-                                    <div class="brand-tagline">Nature • Aesthetic • Content</div>
+                                    <div class="brand-name">shcool &amp; SolitaireCC</div>
+                                    <div class="brand-tagline">Python CLI • Next.js • Live Systems</div>
                                 </div>
                             </div>
                             <div class="montage-item item-4">
                                 <div class="nature-card">
                                     <svg class="nature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.5">
-                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                                        <line x1="8" y1="21" x2="16" y2="21" />
-                                        <line x1="12" y1="17" x2="12" y2="21" />
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                                     </svg>
-                                    <span>Creator</span>
-                                    <small>TikTok</small>
+                                    <span class="counter-val" data-target="30000" data-format="k" data-suffix="+">30K+</span>
+                                    <small>Community Reach</small>
                                 </div>
                             </div>
                         </div>
@@ -192,31 +221,12 @@ bot = <span class="class-name">SystemArchitect</span>()
     <section class="skills" id="skills">
         <div class="section-container">
             <div class="section-header">
-                <p class="section-tag">// what I work with</p>
-                <h2 class="section-title">Technical & Marketing Mastery</h2>
+                <p class="section-tag">// technical competencies</p>
+                <h2 class="section-title">Technical Skills &amp; Stack</h2>
             </div>
 
             <div class="skills-grid">
-                <!-- Marketing & Growth -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                            </svg>
-                        </div>
-                        <h3 class="category-title">Marketing & Growth</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">High-Volume Social Media Strategy</span>
-                        <span class="skill-tag">Automated Content Pipelines</span>
-                        <span class="skill-tag">Advanced Analytics</span>
-                        <span class="skill-tag">Cross-Platform Publishing</span>
-                        <span class="skill-tag">Viral Growth</span>
-                    </div>
-                </div>
-
-                <!-- Software & Automation -->
+                <!-- Languages & Scripting -->
                 <div class="skill-category">
                     <div class="category-header">
                         <div class="category-icon">
@@ -225,39 +235,77 @@ bot = <span class="class-name">SystemArchitect</span>()
                                 <polyline points="8,6 2,12 8,18" />
                             </svg>
                         </div>
-                        <h3 class="category-title">Software & Automation</h3>
+                        <h3 class="category-title">Languages &amp; Scripting</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag highlight">Python</span>
+                        <span class="skill-tag highlight">Java</span>
+                        <span class="skill-tag highlight">C</span>
                         <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Shell Scripting</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">API Integrations</span>
-                        <span class="skill-tag">Workflow Automation</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag highlight">Shell Scripting (Bash)</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML5 / CSS3</span>
                     </div>
                 </div>
 
-                <!-- Systems Infrastructure -->
+                <!-- Web & Automation -->
                 <div class="skill-category">
                     <div class="category-header">
                         <div class="category-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <polygon
-                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
                             </svg>
                         </div>
-                        <h3 class="category-title">Systems Infrastructure</h3>
+                        <h3 class="category-title">Web &amp; Automation</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Linux Environments</span>
-                        <span class="skill-tag">Network Configuration</span>
-                        <span class="skill-tag">Server Management</span>
-                        <span class="skill-tag">Google Cloud VM</span>
-                        <span class="skill-tag">Captive Portals</span>
-                        <span class="skill-tag">Terminal-Based Tools</span>
+                        <span class="skill-tag highlight">Next.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Astro</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag highlight">n8n Workflow Automation</span>
+                        <span class="skill-tag">API Integrations</span>
+                        <span class="skill-tag">Static Hosting</span>
                     </div>
+                </div>
+
+                <!-- Systems & Networking -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                <line x1="6" y1="6" x2="6.01" y2="6" />
+                                <line x1="6" y1="18" x2="6.01" y2="18" />
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Systems &amp; Networking</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">Linux Environments</span>
+                        <span class="skill-tag">Server Management</span>
+                        <span class="skill-tag highlight">Google Cloud VM Deployments</span>
+                        <span class="skill-tag">MikroTik</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git &amp; GitHub</span>
+                        <span class="skill-tag">Captive Portals</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication & Core Strengths Bar -->
+            <div class="skills-auxiliary">
+                <div class="aux-item">
+                    <span class="aux-label">Languages Spoken:</span>
+                    <span class="aux-value">English (Professional working proficiency) • Gikuyu (Native)</span>
+                </div>
+                <div class="aux-item">
+                    <span class="aux-label">Core Competencies:</span>
+                    <span class="aux-value">Object-Oriented Design • Multithreading &amp; Concurrency • Systems Diagnostics • Input Validation</span>
                 </div>
             </div>
         </div>
@@ -267,63 +315,49 @@ bot = <span class="class-name">SystemArchitect</span>()
     <section class="experience" id="experience">
         <div class="section-container">
             <div class="section-header">
-                <p class="section-tag">// relevant experience</p>
-                <h2 class="section-title">What I've Done</h2>
+                <p class="section-tag">// work history</p>
+                <h2 class="section-title">Work Experience</h2>
             </div>
 
             <div class="experience-list">
+                <!-- IT & Hardware Technician -->
                 <div class="exp-card">
-                    <div class="exp-period">July 2026 — Present</div>
+                    <div class="exp-period">2025 — Present</div>
                     <div class="exp-content">
-                        <h3 class="exp-title">Social Media Strategist & Published Author</h3>
-                        <p class="exp-org">Africa Nature Walk (TikTok) & Independent Publishing</p>
+                        <h3 class="exp-title">IT &amp; Hardware Technician</h3>
+                        <p class="exp-org">Independent Technology &amp; Hardware Repair Shop — Nairobi, Kenya</p>
                         <ul class="exp-details">
-                            <li>Spearhead high-frequency content strategy for @africanaturewalk on TikTok, driving engagement through niche storytelling and data-backed viral trends.</li>
-                            <li>Architect and deploy autonomous, multi-track video creation pipelines leveraging text-to-speech AI and curated media for aggressive multi-platform publishing.</li>
-                            <li>Direct full-cycle digital publishing for an expanding Amazon portfolio — managing global distribution, promotional strategies, and author branding.</li>
+                            <li>Provide hardware diagnostics, component-level troubleshooting, and technical repair services for local community and business clients.</li>
+                            <li>Deploy and maintain localized network configurations and cloud-based virtual machines (Google Cloud Platform) for customized client setups.</li>
+                            <li>Configure traffic routing, DHCP/DNS services, and captive portals for network management and authenticated client access.</li>
                         </ul>
                         <div class="exp-tags">
-                            <span>TikTok</span>
-                            <span>Content Strategy</span>
+                            <span>Hardware Diagnostics</span>
+                            <span>Linux Systems</span>
+                            <span>Google Cloud (GCP)</span>
+                            <span>MikroTik</span>
+                            <span>Network Routing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Content & Workflow Automation Builder -->
+                <div class="exp-card">
+                    <div class="exp-period">2025 — Present</div>
+                    <div class="exp-content">
+                        <h3 class="exp-title">Digital Content &amp; Workflow Automation Builder</h3>
+                        <p class="exp-org">Independent Projects (@africanaturewalk &amp; KDP)</p>
+                        <ul class="exp-details">
+                            <li>Built automated multi-track video creation and publishing pipelines using Python, text-to-speech tools, and n8n workflows to scale the @africanaturewalk channel.</li>
+                            <li>Manage end-to-end digital publishing workflows on Amazon, utilizing analytics to inform content scheduling and distribution across an expanding portfolio of 35+ titles.</li>
+                            <li>Analyze performance data, retention curves, and channel engagement to optimize pipeline efficiency and publication output.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>Python Automation</span>
+                            <span>n8n Workflows</span>
                             <span>Amazon KDP</span>
-                            <span>AI Automation</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-card">
-                    <div class="exp-period">2025 — Present</div>
-                    <div class="exp-content">
-                        <h3 class="exp-title">Systems Automation Lead & Web Developer</h3>
-                        <p class="exp-org">SolitaireCC, TurboNet & Independent Projects</p>
-                        <ul class="exp-details">
-                            <li>Engineer, launch, and scale independent web applications (SolitaireCC, TurboNet) using static file hosting and modern Next.js frameworks, managing all live production infrastructure.</li>
-                            <li>Evaluate platform analytics, capital efficiency, and profit margins to drive targeted, high-conversion digital growth strategies.</li>
-                            <li>Develop and deploy proprietary terminal-based productivity frameworks (Self-Helper Pro) in Python, automating administrative workloads and data tracking.</li>
-                        </ul>
-                        <div class="exp-tags">
-                            <span>Next.js</span>
-                            <span>Python</span>
-                            <span>Web Dev</span>
-                            <span>Analytics</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-card">
-                    <div class="exp-period">2025 — Present</div>
-                    <div class="exp-content">
-                        <h3 class="exp-title">Technical Operations Manager</h3>
-                        <p class="exp-org">Independent Tech Repair & Agricultural Management — Nairobi, Kenya</p>
-                        <ul class="exp-details">
-                            <li>Direct daily operations for intensive agricultural ventures and a high-volume technology hardware repair shop, optimizing critical workflows and resource allocation.</li>
-                            <li>Design and implement localized, secure network infrastructure, configuring traffic routing and captive portals for seamless user authentication at scale.</li>
-                        </ul>
-                        <div class="exp-tags">
-                            <span>Network Infrastructure</span>
-                            <span>Operations</span>
-                            <span>Linux</span>
-                            <span>Captive Portals</span>
+                            <span>Data Analytics</span>
+                            <span>Automated Pipelines</span>
                         </div>
                     </div>
                 </div>
@@ -335,11 +369,48 @@ bot = <span class="class-name">SystemArchitect</span>()
     <section class="projects" id="projects">
         <div class="section-container">
             <div class="section-header">
-                <p class="section-tag">// live projects</p>
-                <h2 class="section-title">Websites I Built</h2>
+                <p class="section-tag">// technical portfolio</p>
+                <h2 class="section-title">Technical Projects</h2>
             </div>
 
             <div class="projects-grid">
+                <!-- shcool -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <div class="browser-frame">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="browser-url">terminal: shcool</span>
+                        </div>
+                        <div class="iframe-container">
+                            <div class="project-mini-terminal">
+                                <div class="mini-terminal-line"><span class="prompt">$</span> shcool --sync --tracker</div>
+                                <div class="mini-terminal-line success">[✓] Study &amp; operational workflow synced</div>
+                                <div class="mini-terminal-line info">[i] Local storage: tracking daily tasks on Linux</div>
+                                <div class="mini-terminal-line"><span class="prompt">$</span> shcool --status</div>
+                                <div class="mini-terminal-line success">[✓] All administrative routines active</div>
+                            </div>
+                            <div class="iframe-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header-meta">
+                            <h3 class="project-title">shcool</h3>
+                            <span class="project-badge">2025 — Present</span>
+                        </div>
+                        <p class="project-subtitle">Terminal Productivity &amp; Automation Tool</p>
+                        <p class="project-desc">Developed a terminal-based productivity utility in Python to automate repetitive administrative tasks and local data tracking. Combined shell scripting and structured local storage to streamline daily study and operational workflows on Linux.</p>
+                        <div class="exp-tags project-stack-tags">
+                            <span>Python</span>
+                            <span>Bash</span>
+                            <span>Structured Storage</span>
+                            <span>Linux CLI</span>
+                        </div>
+                        <a href="https://github.com/muranja" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+
                 <!-- SolitaireCC -->
                 <div class="project-card">
                     <div class="project-preview">
@@ -355,61 +426,55 @@ bot = <span class="class-name">SystemArchitect</span>()
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">SolitaireCC</h3>
-                        <p class="project-desc">Classic card game built with vanilla JavaScript. Clean UI, smooth animations, full production deployment.</p>
+                        <div class="project-header-meta">
+                            <h3 class="project-title">SolitaireCC</h3>
+                            <span class="project-badge">2025 — Present</span>
+                        </div>
+                        <p class="project-subtitle">Web Application &amp; Gaming Review Platform</p>
+                        <p class="project-desc">Built, launched, and maintained an independent web platform using modern Next.js frameworks and static file hosting. Managed live production hosting, domain routing, and platform analytics to improve user retention and site performance.</p>
+                        <div class="exp-tags project-stack-tags">
+                            <span>Next.js</span>
+                            <span>JavaScript</span>
+                            <span>Domain Routing</span>
+                            <span>Platform Analytics</span>
+                        </div>
                         <a href="https://solitairecc.com" target="_blank" class="project-link">Visit Site →</a>
                     </div>
                 </div>
 
-                <!-- TurboNet -->
+                <!-- Student Record Management System -->
                 <div class="project-card">
                     <div class="project-preview">
                         <div class="browser-frame">
                             <div class="browser-dots">
                                 <span></span><span></span><span></span>
                             </div>
-                            <span class="browser-url">turbo</span>
+                            <span class="browser-url">java: StudentRecords</span>
                         </div>
                         <div class="iframe-container">
-                            <div class="project-placeholder">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
-                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                                </svg>
-                                <span>Next.js App</span>
+                            <div class="project-mini-terminal">
+                                <div class="mini-terminal-line"><span class="prompt">$</span> java -jar StudentRecordSystem.jar</div>
+                                <div class="mini-terminal-line info">=== STUDENT RECORD MANAGEMENT ===</div>
+                                <div class="mini-terminal-line">[1] Add Student  [2] Search Record</div>
+                                <div class="mini-terminal-line">[3] Generate GPA  [4] Export File</div>
+                                <div class="mini-terminal-line success">[✓] Validated input: student ID enrolled</div>
                             </div>
                             <div class="iframe-overlay"></div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">TurboNet</h3>
-                        <p class="project-desc">High-performance web application built with Next.js. Modern architecture, optimized delivery.</p>
-                        <a href="https://github.com/muranja" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Self-Helper Pro -->
-                <div class="project-card">
-                    <div class="project-preview">
-                        <div class="browser-frame">
-                            <div class="browser-dots">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <span class="browser-url">terminal</span>
+                        <div class="project-header-meta">
+                            <h3 class="project-title">Student Record Management</h3>
+                            <span class="project-badge">2025 — 2026</span>
                         </div>
-                        <div class="iframe-container">
-                            <div class="project-placeholder">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
-                                    <polyline points="16,18 22,12 16,6" />
-                                    <polyline points="8,6 2,12 8,18" />
-                                </svg>
-                                <span>CLI Tool</span>
-                            </div>
-                            <div class="iframe-overlay"></div>
+                        <p class="project-subtitle">Academic Software Project</p>
+                        <p class="project-desc">Engineered a menu-driven student record management application in Java, applying object-oriented programming principles, input validation, and structured data handling.</p>
+                        <div class="exp-tags project-stack-tags">
+                            <span>Java</span>
+                            <span>OOP</span>
+                            <span>Input Validation</span>
+                            <span>Data Handling</span>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Self-Helper Pro</h3>
-                        <p class="project-desc">Terminal-based productivity framework in Python. Automates administrative workloads and data tracking for maximum operational output.</p>
                         <a href="https://github.com/muranja" target="_blank" class="project-link">View on GitHub →</a>
                     </div>
                 </div>
@@ -421,15 +486,15 @@ bot = <span class="class-name">SystemArchitect</span>()
     <section class="books" id="books">
         <div class="section-container">
             <div class="section-header">
-                <p class="section-tag">// published work</p>
-                <h2 class="section-title">Amazon KDP Books</h2>
+                <p class="section-tag">// digital publishing</p>
+                <h2 class="section-title">Amazon KDP Portfolio</h2>
             </div>
 
             <div class="books-showcase">
                 <div class="books-info">
-                    <div class="books-count">35+</div>
+                    <div class="books-count counter-val" data-target="35" data-suffix="+">35+</div>
                     <h3>Published Titles on Amazon</h3>
-                    <p>Full-cycle digital publishing across an expanding Amazon portfolio. Independently managing global distribution, dynamic promotional strategies, and author branding across multiple niches.</p>
+                    <p>End-to-end digital publishing across an expanding Amazon portfolio. Built automated multi-track creation and publishing pipelines, managing global distribution, analytics, and content scheduling.</p>
                     <a href="https://www.amazon.com" target="_blank" class="btn btn-secondary">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
                             height="18">
@@ -483,24 +548,60 @@ bot = <span class="class-name">SystemArchitect</span>()
         <div class="section-container">
             <div class="section-header">
                 <p class="section-tag">// academic background</p>
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title">Education &amp; Qualifications</h2>
             </div>
 
-            <div class="edu-card">
-                <div class="edu-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                    </svg>
+            <div class="education-list">
+                <!-- University of the People -->
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <div class="edu-info">
+                        <div class="edu-header-row">
+                            <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+                            <span class="edu-period">Nov 2025 — Present</span>
+                        </div>
+                        <p class="edu-school">University of the People</p>
+                        <p class="edu-status">In Progress — Enrolled in concurrent coursework with practical emphasis on software engineering, computer architecture, and low-level system programming.</p>
+                        
+                        <div class="edu-details-block">
+                            <p><strong>Relevant Coursework:</strong> Programming 1 &amp; 2 (Java), Computer Systems, Concurrent Computing, Statistics, Professional Communication.</p>
+                            <p><strong>Focus Areas:</strong> Object-oriented design, GUI development (Java Swing/JavaFX), multithreading, and low-level system programming (C).</p>
+                        </div>
+                        <div class="exp-tags">
+                            <span>Java</span>
+                            <span>C</span>
+                            <span>Concurrent Computing</span>
+                            <span>Computer Systems</span>
+                            <span>Object-Oriented Design</span>
+                            <span>Statistics</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="edu-info">
-                    <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
-                    <p class="edu-school">University of the People</p>
-                    <p class="edu-status">In Progress — Concurrent coursework in Concurrent Computing, Statistics, and Professional Communication while managing full-scale digital operations.</p>
-                    <div class="exp-tags">
-                        <span>Concurrent Computing</span>
-                        <span>Statistics</span>
-                        <span>Java</span>
-                        <span>Student Record System</span>
+
+                <!-- High School Certificate -->
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                    </div>
+                    <div class="edu-info">
+                        <div class="edu-header-row">
+                            <h3 class="edu-degree">High School Certificate (KCSE)</h3>
+                            <span class="edu-period">2015 — 2018</span>
+                        </div>
+                        <p class="edu-school">Chania High School — Kenya</p>
+                        <p class="edu-status">Kenya Certificate of Secondary Education (KCSE). Strong foundation in mathematics, physical sciences, and technology.</p>
+                        <div class="exp-tags">
+                            <span>Secondary Education</span>
+                            <span>Mathematics</span>
+                            <span>Physical Sciences</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -515,7 +616,7 @@ bot = <span class="class-name">SystemArchitect</span>()
                     <p class="section-tag">// let's connect</p>
                     <h2 class="contact-headline">Ready to build something?</h2>
                     <p class="contact-microcopy">
-                        Currently open for freelance automation, web development, content strategy, and technical writing. Based in Nairobi, Kenya.
+                        Open for Software Engineering, Systems Administration, and IT roles, as well as freelance Python automation and Next.js development. Based in Nairobi, Kenya.
                     </p>
                 </div>
 
@@ -533,37 +634,52 @@ bot = <span class="class-name">SystemArchitect</span>()
                         </svg>
                         <span>simonmuranja365@gmail.com</span>
                     </a>
+                    <div class="contact-item location-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>Nairobi, Kenya</span>
+                    </div>
                 </div>
 
                 <div class="contact-actions">
-                    <a href="mailto:simonmuranja365@gmail.com" class="btn btn-primary btn-large">
-                        <span>Start a Project</span>
+                    <a href="Simon-Njiyo-Muranja-Resume.pdf" download="Simon-Njiyo-Muranja-Resume.pdf" class="btn btn-primary btn-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        <span>Download Full Resume (PDF)</span>
+                    </a>
+                    <a href="mailto:simonmuranja365@gmail.com" class="btn btn-secondary btn-large">
+                        <span>Send Email</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </a>
 
                     <div class="contact-links">
-                        <a href="https://github.com/muranja" target="_blank" class="social-link" aria-label="GitHub">
+                        <a href="https://github.com/muranja" target="_blank" class="social-link" aria-label="GitHub Profile">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                             </svg>
                         </a>
-                        <a href="https://x.com/wisetangents" target="_blank" class="social-link" aria-label="X">
+                        <a href="https://x.com/wisetangents" target="_blank" class="social-link" aria-label="X (Twitter) Profile">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
                         </a>
                         <a href="https://www.tiktok.com/@africanaturewalk" target="_blank" class="social-link"
-                            aria-label="TikTok">
+                            aria-label="TikTok Profile">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
                             </svg>
                         </a>
-                        <a href="https://muranja.github.io/dev" target="_blank" class="social-link" aria-label="Portfolio">
+                        <a href="https://muranja.github.io/dev" target="_blank" class="social-link" aria-label="Portfolio &amp; CV Website">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10" />
                                 <line x1="2" y1="12" x2="22" y2="12" />
@@ -582,7 +698,7 @@ bot = <span class="class-name">SystemArchitect</span>()
             <p class="footer-text">
                 <span class="code-accent">&lt;</span> Simon Njiyo Muranja <span class="code-accent">/&gt;</span>
             </p>
-            <p class="footer-copyright">© 2026 — Nairobi, Kenya</p>
+            <p class="footer-copyright">© 2026 — Nairobi, Kenya • <a href="Simon-Njiyo-Muranja-Resume.pdf" download class="footer-resume-link">Download CV</a></p>
         </div>
     </footer>
 
