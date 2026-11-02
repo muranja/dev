@@ -27,6 +27,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a192f'/%3E%3Ctext x='50' y='64' font-family='monospace' font-size='42' font-weight='bold' fill='%2364ffda' text-anchor='middle'%3E%26lt%3BSM%2F%26gt%3B%3C/text%3E%3C/svg%3E">
 </head>
 
 <body>
@@ -544,87 +547,207 @@ dev = <span class="class-name">SystemsEngineer</span>()
                 </div>
             </div>
 
-            <!-- Published Books Catalog Grid -->
+            <!-- Books Category Filter Bar -->
+            <div class="books-filter-bar">
+                <button class="filter-btn active" data-filter="all">All Titles (8)</button>
+                <button class="filter-btn" data-filter="business">Business &amp; Finance</button>
+                <button class="filter-btn" data-filter="wellness">Wellness &amp; Journals</button>
+                <button class="filter-btn" data-filter="kids">Education &amp; Kids</button>
+            </div>
+
+            <!-- Published Books Catalog Grid with 3D Mockups -->
             <div class="books-catalog-grid">
                 <!-- Book 1 -->
-                <a href="https://www.amazon.com/dp/B0CWXKMSMH" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
+                <div class="book-card" data-category="business">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/organize-your-brand.jpg" alt="Organize Your Brand book cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
+                    </div>
+                    <div class="book-card-content">
                         <span class="book-card-category">Business &amp; Strategy</span>
                         <h3 class="book-card-title">Organize Your Brand</h3>
                         <p class="book-card-desc">A Comprehensive Guide to Streamline Your Business for Success. Operational structure and branding workflows.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CWXKMSMH" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                </div>
 
                 <!-- Book 2 -->
-                <a href="https://www.amazon.com/dp/B0CWD1V1P6" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
+                <div class="book-card" data-category="business">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/trading-journal.jpg" alt="The Trading Journal book cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
+                    </div>
+                    <div class="book-card-content">
                         <span class="book-card-category">Finance &amp; Trading</span>
                         <h3 class="book-card-title">The Trading Journal</h3>
                         <p class="book-card-desc">Logbook for Tracking and Reflecting on Trades. Systematic execution log and risk management review framework.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CWD1V1P6" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                </div>
 
                 <!-- Book 3 -->
-                <a href="https://www.amazon.com/dp/B0CPQF5XPB" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
-                        <span class="book-card-category">Wellness &amp; Health</span>
-                        <h3 class="book-card-title">Anger Management Therapy Workbook</h3>
-                        <p class="book-card-desc">Navigate Anger, Find Peace. Interactive exercises and reflective toolsets designed for emotional wellness.</p>
+                <div class="book-card" data-category="wellness">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/anger-management.jpg" alt="Anger Management Therapy Workbook cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                    <div class="book-card-content">
+                        <span class="book-card-category">Wellness &amp; Health</span>
+                        <h3 class="book-card-title">Anger Management Therapy</h3>
+                        <p class="book-card-desc">Navigate Anger, Find Peace. Interactive exercises and reflective toolsets designed for emotional wellness.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CPQF5XPB" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Book 4 -->
-                <a href="https://www.amazon.com/dp/B0CQH1RDLY" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
+                <div class="book-card" data-category="business">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/let-him-blog.jpg" alt="Let Him Blog book cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
+                    </div>
+                    <div class="book-card-content">
                         <span class="book-card-category">Content Publishing</span>
                         <h3 class="book-card-title">Let Him Blog</h3>
-                        <p class="book-card-desc">Organize, Plan, Publish. Systematic editorial and content scheduling framework for independent digital authors.</p>
+                        <p class="book-card-desc">Organize, Plan, Publish. Systematic editorial and content scheduling framework for digital creators.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CQH1RDLY" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                </div>
 
                 <!-- Book 5 -->
-                <a href="https://www.amazon.com/dp/B0CPYLG4XD" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
+                <div class="book-card" data-category="business">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/finances-in-focus.jpg" alt="Finances in Focus book cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
+                    </div>
+                    <div class="book-card-content">
                         <span class="book-card-category">Finance &amp; Budgeting</span>
                         <h3 class="book-card-title">Finances in Focus</h3>
                         <p class="book-card-desc">A Bill Tracker Journal. Practical cash-flow monitoring, recurring expenditure logs, and budget reconciliation.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CPYLG4XD" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                </div>
 
                 <!-- Book 6 -->
-                <a href="https://www.amazon.com/dp/B0CVTYD3YT" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
-                        <span class="book-card-category">Guided Journal</span>
-                        <h3 class="book-card-title">Prayer Journal: Whispers of the Soul</h3>
-                        <p class="book-card-desc">Guided daily contemplative journal with structured reflection spaces, gratitude logs, and devotion prompts.</p>
+                <div class="book-card" data-category="wellness">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/prayer-journal.jpg" alt="Prayer Journal Whispers of the Soul cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                    <div class="book-card-content">
+                        <span class="book-card-category">Guided Journal</span>
+                        <h3 class="book-card-title">Prayer Journal: Whispers</h3>
+                        <p class="book-card-desc">Guided daily contemplative journal with structured reflection spaces, gratitude logs, and devotion prompts.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CVTYD3YT" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Book 7 -->
-                <a href="https://www.amazon.com/dp/B0CTD32JTZ" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
-                        <span class="book-card-category">Early Education</span>
-                        <h3 class="book-card-title">Time Workbook For Kindergarten</h3>
-                        <p class="book-card-desc">Interactive time-telling worksheets and clock exercises crafted for foundational childhood cognitive skills.</p>
+                <div class="book-card" data-category="kids">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/time-workbook.jpg" alt="Time Workbook For Kindergarten cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                    <div class="book-card-content">
+                        <span class="book-card-category">Early Education</span>
+                        <h3 class="book-card-title">Time Workbook</h3>
+                        <p class="book-card-desc">Interactive time-telling worksheets and clock exercises crafted for foundational childhood cognitive skills.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CTD32JTZ" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Book 8 -->
-                <a href="https://www.amazon.com/dp/B0CVG6BLM6" target="_blank" rel="noopener noreferrer" class="book-card">
-                    <div>
+                <div class="book-card" data-category="kids">
+                    <div class="book-mockup-stage">
+                        <span class="book-format-pill">Paperback</span>
+                        <div class="book-3d-wrap">
+                            <img src="images/books/cute-animal-coloring.jpg" alt="Cute Animal Coloring Book cover" loading="lazy" class="book-3d-cover-img">
+                            <div class="book-3d-crease"></div>
+                            <div class="book-3d-gloss"></div>
+                            <div class="book-3d-page-edge"></div>
+                        </div>
+                    </div>
+                    <div class="book-card-content">
                         <span class="book-card-category">Activity &amp; Creativity</span>
                         <h3 class="book-card-title">Cute Animal Coloring Book</h3>
                         <p class="book-card-desc">Happy Farmyard Friends. Creative illustration and mindfulness coloring book designed for young creators.</p>
+                        <div class="book-card-actions">
+                            <a href="https://www.amazon.com/dp/B0CVG6BLM6" target="_blank" rel="noopener noreferrer" class="btn-book-amazon">
+                                <span>View on Amazon</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
                     </div>
-                    <span class="book-card-link">View on Amazon →</span>
-                </a>
+                </div>
             </div>
 
             <!-- Full Catalog CTA -->

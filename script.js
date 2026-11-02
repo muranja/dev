@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTerminalAnimation();
     initSmoothScroll();
     initActiveNavHighlight();
+    initBookFilter();
 });
 
 // ===================================
@@ -330,4 +331,40 @@ function initActiveNavHighlight() {
             ticking = true;
         }
     }, { passive: true });
+}
+
+// ===================================
+// Book Catalog Category Filter
+// ===================================
+/**
+ * Handles interactive filtering of published books by category.
+ */
+function initBookFilter() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const bookCards = document.querySelectorAll('.book-card[data-category]');
+
+    if (!filterButtons.length || !bookCards.length) return;
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter') || 'all';
+
+            bookCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'all' || category === filterValue) {
+                    card.classList.remove('hidden');
+                    const htmlCard = /** @type {HTMLElement} */ (card);
+                    htmlCard.style.animation = 'none';
+                    // Force reflow to replay animation cleanly
+                    void htmlCard.offsetWidth;
+                    htmlCard.style.animation = 'fadeIn 0.35s ease forwards';
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
 }
